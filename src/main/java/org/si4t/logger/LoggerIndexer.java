@@ -16,23 +16,8 @@
 
 package org.si4t.logger;
 
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.apache.lucene.analysis.charfilter.HTMLStripCharFilter;
-import org.apache.solr.client.solrj.SolrServerException;
-import org.apache.solr.common.SolrInputDocument;
-import org.si4t.solr.SolrClientRequest.ServerMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.xml.sax.SAXException;
 
 import com.tridion.configuration.Configuration;
 import com.tridion.configuration.ConfigurationException;
@@ -41,7 +26,6 @@ import com.tridion.storage.si4t.BinaryIndexData;
 import com.tridion.storage.si4t.IndexingException;
 import com.tridion.storage.si4t.SearchIndex;
 import com.tridion.storage.si4t.SearchIndexData;
-import com.tridion.storage.si4t.Utils;
 
 /**
  * SolrIndexer.
