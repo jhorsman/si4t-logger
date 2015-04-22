@@ -131,6 +131,10 @@ public class LoggerIndexer implements SearchIndex
 		log.debug("destroy() called");
 	}
 
+	private void logIndexData(SearchIndexData data) {
+		log.debug("SearchIndexData is: " + data.toString());
+	}
+
 	private void logIndexData(BaseIndexData data) {
 		log.debug("BaseIndexData is: " + data.toString());
 	}
