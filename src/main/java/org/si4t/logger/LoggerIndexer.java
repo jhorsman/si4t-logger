@@ -71,6 +71,7 @@ public class LoggerIndexer implements SearchIndex
 	public void addBinaryToIndex(BinaryIndexData data) throws IndexingException
 	{
 		log.debug("addBinaryToIndex() called");
+		logIndexData(data);
 	}
 
 	/*
@@ -83,6 +84,7 @@ public class LoggerIndexer implements SearchIndex
 	public void addItemToIndex(SearchIndexData data) throws IndexingException
 	{
 		log.debug("addItemToIndex() called");
+		logIndexData(data);
 	}
 
 	/*
@@ -95,6 +97,7 @@ public class LoggerIndexer implements SearchIndex
 	public void removeBinaryFromIndex(BaseIndexData data) throws IndexingException
 	{
 		log.debug("addItemToIndex() called");
+		logIndexData(data);
 	}
 
 	/*
@@ -107,6 +110,7 @@ public class LoggerIndexer implements SearchIndex
 	public void removeItemFromIndex(BaseIndexData data) throws IndexingException
 	{
 		log.debug("removeItemFromIndex() called");
+		logIndexData(data);
 	}
 
 	/*
@@ -119,6 +123,7 @@ public class LoggerIndexer implements SearchIndex
 	public void updateItemInIndex(SearchIndexData data) throws IndexingException
 	{
 		log.debug("removeItemFromIndex() called");
+		logIndexData(data);
 	}
 
 	/*
@@ -129,6 +134,7 @@ public class LoggerIndexer implements SearchIndex
 	public void commit(String publicationId) throws IndexingException
 	{
 		log.debug("commit() called");
+		log.debug("publicationId is: " + publicationId);
 	}
 
 	/*
@@ -140,4 +146,9 @@ public class LoggerIndexer implements SearchIndex
 	{
 		log.debug("destroy() called");
 	}
+
+	private void logIndexData(BaseIndexData data) {
+		log.debug("BaseIndexData is: " + data.toString());
+	}
+
 }
