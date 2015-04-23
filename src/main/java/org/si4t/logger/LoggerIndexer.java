@@ -28,7 +28,7 @@ import com.tridion.storage.si4t.SearchIndex;
 import com.tridion.storage.si4t.SearchIndexData;
 
 /**
- * SolrIndexer.
+ * LoggerIndexer.
  * 
  * @author Jan Horsman
  * @version 1.20
