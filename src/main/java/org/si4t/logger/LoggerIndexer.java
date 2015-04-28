@@ -80,7 +80,7 @@ public class LoggerIndexer implements SearchIndex
 	@Override
 	public void removeBinaryFromIndex(BaseIndexData data) throws IndexingException
 	{
-		log.debug("addItemToIndex() called");
+		log.debug("removeBinaryFromIndex() called");
 		logIndexData(data);
 	}
 
@@ -106,7 +106,7 @@ public class LoggerIndexer implements SearchIndex
 	@Override
 	public void updateItemInIndex(SearchIndexData data) throws IndexingException
 	{
-		log.debug("removeItemFromIndex() called");
+		log.debug("updateItemInIndex() called");
 		logIndexData(data);
 	}
 
